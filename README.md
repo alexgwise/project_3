@@ -27,3 +27,14 @@
 - Mapbox API
 - Dot ENV
 
+## Day 2 ##
+
+- Classifier model tuned to use fewer features, while still maintaining acceptable accuracy
+- Good start on visuals
+- PowerPoint shell started
+
+# Day 3 ##
+- PowerPoint nearly complete
+- Classifier model finalized
+- Continued work on visuals
+
