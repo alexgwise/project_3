@@ -1,5 +1,16 @@
 # Turning Data Into Information: Evaluating Reimbursements #
 
+## Summary of our Project and Findings ##
+
+Our project team examined a data set of three month's worth of reimbursement claim denials. Each reimbursement denial was ultimately resubmitted for payment, or written off. 
+Our team found that we could create a relatively strong Random Forest Classifier model (94% weighted average accuracy) for predicting whether a claim would be written off or resubmitted. 
+92% recall accuracy may not be a high enough threshold for management on write off determination, but the 96% precision score for resubmitting has the potential to greatly speed up the time spent in resubmitting
+a reimbursement denial. Our data showed an average of 35 days was spent before a resubmission was performed. Our classifier model could be used on a daily basis to identify which claims are predicted to be resubmitted, greatly reducing the time to collect. 
+
+In addition, we created several visuals that allow the user to examine the data set through a number of lenses including, region, days to resolve, write off vs. resubmission, manufacturer data, customer data, and denial reason. These plots should aid the management team in knowing which contracts and manufacturers are causing the largest impacts to their business, so targeted actions and follow up conversations can take place.
+
+We're proud of using the principles and techniques we have learned in school to a real world problem, that leads to meaningful action. Thank you for your interest in our project!
+
 ## Day 1 ##
 
 **Our Dataset**
@@ -35,6 +46,11 @@
 
 ## Day 3 ##
 - PowerPoint nearly complete
-- Classifier model finalized
+- 2nd iteration of random forest classifier model created
 - Continued work on visuals
+
+## Day 4 ##
+- 3rd and final iteration of random forest classifier model created
+- Added more visuals
+- created dashboard tabs to organize visuals
 
