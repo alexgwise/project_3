@@ -2,21 +2,40 @@
 
 ## Summary of our Project and Findings ##
 
-Our project team examined a data set of three month's worth of reimbursement claim denials. Each reimbursement denial was ultimately resubmitted for payment, or written off. 
-Our team found that we could create a relatively strong Random Forest Classifier model (94% weighted average accuracy) for predicting whether a claim would be written off or resubmitted. 
-92% recall accuracy may not be a high enough threshold for management on write off determination, but the 96% precision score for resubmitting has the potential to greatly speed up the time spent in resubmitting
-a reimbursement denial. 
+### The Data ###
+
+Our project team examined a data set of three month's worth of reimbursement claim denials. Below is a quick description of our data set:
+- Over 56k rows
+- 20 features
+- pre-labeled binary outcomes
+- balanced sample with ~60/40 split between the two outcomes
+
+### The Classifier Model ###
+
+Each reimbursement denial was ultimately resubmitted for payment, or written off. 
+Our team found that we could create a relatively strong Random Forest Classifier model (94% weighted average accuracy) predicting whether a claim would be written off or resubmitted. 
 
 ![](https://github.com/alexgwise/project_3/blob/main/Resources/model%203%20confusion%20matrix.PNG)
+
+After three iterations, we created a parsimonious model that relied on a fraction of the original data features. The great thing about the final set of features was that all data points were available at the time of the denial, and did not have to be added as part of the resubmission or write off reconciliation step. This means that samples can be evaluated for potential resubmission in near real time.
+
 ![](https://github.com/alexgwise/project_3/blob/main/Resources/model%203%20top%20features.PNG)
 
-Our data showed an average of 35 days was spent before a resubmission was performed. Our classifier model could be used on a daily basis to identify which claims are predicted to be resubmitted, greatly reducing the time to collect. 
+92% recall accuracy may not be a high enough threshold for management on write off determination, but the 96% precision score for resubmitting has the potential to greatly speed up the time spent in resubmitting a reimbursement denial. 
 
+**Our data showed an average of 35 days was spent before a resubmission was performed. Our classifier model could be used on a daily basis to identify which claims are predicted to be resubmitted, greatly reducing the time to collect. In the Q4 data set, that would result in working capital savings on $3.9M in resubmissions!**
 
+### Visualizations ###
 
-In addition, we created several visuals that allow the user to examine the data set through a number of lenses including, region, days to resolve, write off vs. resubmission, manufacturer data, customer data, and denial reason. These plots should aid the management team in knowing which contracts and manufacturers are causing the largest impacts to their business, so targeted actions and follow up conversations can take place.
+In addition, we created several visuals that allow the user to examine the data set through a number of lenses including, region, days to resolve, write off vs. resubmission, manufacturer data, customer data, and denial reason. These plots should aid the management team in knowing which contracts and manufacturers are causing the largest impacts to their business, so targeted actions and follow up conversations can take place. Below are a few examples
 
-We're proud of using the principles and techniques we have learned in school to a real world problem, that leads to meaningful action. Thank you for your interest in our project!
+![](https://github.com/alexgwise/project_3/blob/main/Images/Manufacturer_Writeoff.png)
+
+![](https://github.com/alexgwise/project_3/blob/main/Images/Contract_Plot.png)
+
+![](https://github.com/alexgwise/project_3/blob/main/Images/Number_of_Days_to_Resolve.png)
+
+***We're proud of using the principles and techniques we have learned in school to a real world problem, that leads to meaningful action. Thank you for your interest in our project!***
 
 ## Day 1 ##
 
