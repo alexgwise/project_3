@@ -12,6 +12,8 @@ Our project team examined a data set of three month's worth of reimbursement cla
 
 ### The Classifier Model ###
 
+*The classifier model can be found in the reimburse_decision_tree.ipynb file.*
+
 Each reimbursement denial was ultimately resubmitted for payment, or written off. 
 Our team found that we could create a relatively strong Random Forest Classifier model (94% weighted average accuracy) predicting whether a claim would be written off or resubmitted. 
 
@@ -26,6 +28,8 @@ After three iterations, we created a parsimonious model that relied on a fractio
 **Our data showed an average of 35 days was spent before a resubmission was performed. Our classifier model could be used on a daily basis to identify which claims are predicted to be resubmitted, greatly reducing the time to collect. In the Q4 data set, that would result in working capital savings on $3.9M in resubmissions!**
 
 ### Visualizations ###
+
+*The visualizations can be found in the Viz.ipynb file.*
 
 In addition, we created several visuals that allow the user to examine the data set through a number of lenses including, region, days to resolve, write off vs. resubmission, manufacturer data, customer data, and denial reason. These plots should aid the management team in knowing which contracts and manufacturers are causing the largest impacts to their business, so targeted actions and follow up conversations can take place. Below are a few examples
 
